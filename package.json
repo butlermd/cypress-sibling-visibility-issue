@@ -1,0 +1,13 @@
+{
+  "name": "cypress-sibling-visibility-issue",
+  "version": "1.0.0",
+  "description": "Demoing an issue with \".not.be.visible\" in cypress when an element is covered by a sibling",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^10.5.0"
+  }
+}

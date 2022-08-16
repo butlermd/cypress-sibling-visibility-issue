@@ -1,0 +1,39 @@
+<html>
+<head>
+    <style>
+        div, main, nav {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        main, nav {
+            background-color: white;
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            padding: 1rem 25%;
+            box-sizing: border-box;
+        }
+
+        main.active, nav.active {
+            z-index: 2;
+        }
+    </style>
+    <script type="application/javascript">
+        function switchToMain() {
+          document.querySelector('nav').classList.remove('active');
+          document.querySelector('main').classList.add('active');
+        }
+        function switchToNav() {
+          document.querySelector('main').classList.remove('active');
+          document.querySelector('nav').classList.add('active');
+        }
+    </script>
+</head>
+<body>
+<div>
+    <nav><h1>The Nav Element</h1><button onclick="switchToMain()">Switch To Main</button></nav>
+    <main class="active"><h1>The Main Element</h1><button onclick="switchToNav()">Switch To Nav</button></main>
+</div>
+</body>
+</html>
